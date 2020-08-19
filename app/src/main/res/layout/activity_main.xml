@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="MainViewBinding">
+        <variable
+            name="model"
+            type="cn.huangchengxi.jetpack.MainViewModel" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homeRecyclerview"
+            adapter="@{model.adapter}"
+            app:layoutManager="@{model.layoutManager}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

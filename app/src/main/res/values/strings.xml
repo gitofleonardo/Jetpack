@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jetpack</string>
+    <string name="animation_drawable">AnimationDrawable</string>
+    <string name="animation_dialog">AnimationDialog</string>
+    <string name="circular_animation">CircularAnimation</string>
+    <string name="spring_animation">SpringAnimation</string>
+    <string name="emt">EMT</string>
+    <string name="scene_change">SceneChange</string>
+    <string name="activity_transition">ActivityTransition</string>
+</resources>
