@@ -22,52 +22,48 @@
             android:layout_width="50dp"
             android:layout_height="50dp"/>
         <Button
+            android:gravity="start|center"
             android:textAllCaps="false"
             android:layout_gravity="center_horizontal"
             android:text="@string/animation_dialog"
-            android:textColor="#FFF"
             android:background="@drawable/btn_background"
             android:id="@+id/dialogBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            android:gravity="start|center"
             android:id="@+id/circularAnimationBtn"
-            android:layout_marginTop="20dp"
-            android:textColor="#FFF"
             android:background="@drawable/btn_background"
             android:text="@string/circular_animation"
             android:textAllCaps="false"
             android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            android:gravity="start|center"
             android:text="@string/spring_animation"
             android:textAllCaps="false"
-            android:textColor="#FFF"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:id="@+id/springAnimationBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_background"/>
         <Button
+            android:gravity="start|center"
             android:text="@string/scene_change"
             android:textAllCaps="false"
-            android:textColor="#FFF"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:id="@+id/sceneChangeBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_background"/>
         <Button
+            android:gravity="start|center"
             android:text="@string/activity_transition"
             android:textAllCaps="false"
-            android:textColor="#FFF"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:id="@+id/activityTransitionBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_background"/>
     </LinearLayout>

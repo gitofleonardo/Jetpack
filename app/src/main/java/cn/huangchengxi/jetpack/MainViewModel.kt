@@ -15,7 +15,9 @@ import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import cn.huangchengxi.jetpack.animation.AnimationMainActivity
+import cn.huangchengxi.jetpack.audiomedia.AudioActivity
 import cn.huangchengxi.jetpack.camerax.CameraXActivity
+import cn.huangchengxi.jetpack.notification.NotificationActivity
 import com.bumptech.glide.Glide
 
 class MainViewModel:ViewModel() ,View.OnClickListener{
@@ -26,6 +28,8 @@ class MainViewModel:ViewModel() ,View.OnClickListener{
     init {
         items.add(Item(R.drawable.camera,"CameraX"))
         items.add(Item(R.drawable.animations,"Animations"))
+        items.add(Item(R.drawable.media,"MediaController"))
+        items.add(Item(R.drawable.notification,"Notifications"))
     }
     companion object{
         @JvmStatic
@@ -60,6 +64,14 @@ class MainViewModel:ViewModel() ,View.OnClickListener{
                     }
                     1->{
                         context.startActivity(Intent(context,AnimationMainActivity::class.java))
+                    }
+                    2->{
+                        context.startActivity(Intent(context,AudioActivity::class.java))
+                    }
+                    3->{
+                        context.startActivity(
+                            Intent(context, NotificationActivity::class.java)
+                        )
                     }
                 }
             }

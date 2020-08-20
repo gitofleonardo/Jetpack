@@ -7,4 +7,6 @@
     <string name="emt">EMT</string>
     <string name="scene_change">SceneChange</string>
     <string name="activity_transition">ActivityTransition</string>
+    <string name="simple_notification">SimpleNotification</string>
+    <string name="simplenotificationwithclick">SimpleNotificationWithClick</string>
 </resources>
